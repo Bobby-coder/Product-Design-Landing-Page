@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <img src="/assets/logo.svg" alt="" class="header-logo">
+        <div class="header-nav">
+            <div class="toggle-nav">
+                <button onclick="remove()" class="cross"><img src="/assets/cross-svgrepo-com.svg" alt=""></button>
+                <ul class="list">
+                    <li class="list-item">home</li>
+                    <li class="list-item">project</li>
+                    <li class="list-item">about</li>
+                    <li class="list-item">contact</li>
+                    <li class="list-item">other page</li>
+                </ul>
+            </div>
+        </div>
+        <button onclick="display()" class="menu-icon"><img src="/assets/menu-bars-svgrepo-com.svg" alt=""></button>
+    </div>
+
+    <script>
+        const nav = document.querySelector(".header-nav");
+        
+        const display = () => nav.classList.add("active")
+        const remove = () => nav.classList.remove("active")
+    </script>
+
+</body>
+</html>
+
+          
