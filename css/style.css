@@ -6,11 +6,17 @@
     box-sizing: border-box;
 }
 
+:root{
+    font-size: 62.5%;
+    --red: #E21717;
+    --white: #fff;
+}
+
 body {
     background-color: #0d0d0d;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    color: #ffffff;
+    color: var(--white)
 }
 
 .header{
@@ -23,16 +29,16 @@ body {
 }
 
 .header-logo{
-    width: 120px;
+    width: 12rem;
 }
 
 .list{
     display: flex;
-    gap: 80px;
+    gap: 8rem;
 }
 
 .list-item{
-    color: #fff;
+    color: var(--white);
     list-style-type: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -42,8 +48,58 @@ body {
     display: none;
 }
 
+.hero-section{
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.hero-img{
+    width: 65rem;
+    margin-top: -8rem;
+}
+
+.hero-img > img{
+    width: 100%;
+}
+
+.hero-right-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero-right-section > p{
+    font-size: 2rem;
+}
+
+.hero-right-section >p:first-child{
+    font-weight: 700;
+    color: var(--red);
+}
+
+.hero-right-section > h1{
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+.hero-right-section > .about-btn{
+    align-self: flex-start;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    background-color: var(--red);
+}
 
 @media only screen and (max-width:768px){
+
+    br{
+        display: none;
+    }
 
     .header{
         height: 12vh;
@@ -61,8 +117,8 @@ body {
      left: 0;   
      background-color: #0d0d0d;
      display: flex;
-     flex-direction: column-reverse;
-     justify-content: space-evenly;
+     flex-direction: column;
+     justify-content: center;
      align-items: center;
      transform: translateX(100%);
      transition: all 0.3s ease;
@@ -90,12 +146,47 @@ body {
         display: block;
     }
 
+    .cross{
+        position: absolute;
+        top: 4.5%;
+        right: 8%;
+    }
+
     .menu-icon > img, .cross > img{
         width: 30px;
     }
 
     .active .toggle-nav{
         transform: translateX(0);
+    }
+
+    .hero-section{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-img{
+        width: 300px;
+        margin-top: 0;
+    }
+
+    .hero-right-section{
+        align-items: center;
+    }
+
+    .hero-right-section > h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .hero-right-section > p{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .hero-right-section > .about-btn{
+        font-size: 1.6rem;
+        align-self: auto;
     }
 }
 
