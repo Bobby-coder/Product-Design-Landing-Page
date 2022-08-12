@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
 
 * {
     padding: 0;
@@ -34,14 +34,14 @@ body {
 
 .list{
     display: flex;
-    gap: 8rem;
+    gap: 6rem;
 }
 
 .list-item{
     color: var(--white);
     list-style-type: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.8rem;
 }
 
 .menu-icon, .cross{
@@ -71,6 +71,8 @@ body {
 
 .hero-right-section > p{
     font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
 }
 
 .hero-right-section >p:first-child{
@@ -81,6 +83,7 @@ body {
 .hero-right-section > h1{
     font-size: 5rem;
     line-height: 5rem;
+    letter-spacing: 0.1rem;
 }
 
 .hero-right-section > .about-btn{
@@ -227,14 +230,14 @@ body {
 }
 
 .projects-header > .heading > h1{
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
     text-transform: uppercase;
     font-weight: 500;
 }
 
 .projects-header > .heading > p{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-transform: capitalize;
     letter-spacing: 0.1rem;
 }
@@ -250,6 +253,7 @@ body {
 }
 
 .project-container{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -258,6 +262,7 @@ body {
 }
 
 .project-row{
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 5rem;
@@ -297,6 +302,69 @@ body {
     font-weight: 500;
 }
 
+.contact-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem;
+    margin-bottom: 5rem;
+    background-color: #1d1d1d;
+}
+
+.contact-section > .left{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contact-section > .left > h1{
+    font-size: 5rem;
+    line-height: 6.5rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.contact-section > .left > p{
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.contact-section > a{
+    font-size: 2.2rem;
+    color: var(--white);
+    background-color: var(--red);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    align-self: center;
+}
+
+.footer{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 18vh;
+    padding: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d1d1d;
+}
+
+.footer-logo{
+    width: 12rem;
+}
+
+.footer-icons{
+    display: flex;
+    gap: 4rem;
+}
+
+.icon{
+    display: inline-block;
+    transform: scale(2);
+    color: var(--white);
+    text-decoration: none;
+}
 
 @media only screen and (max-width:768px){
 
@@ -308,7 +376,7 @@ body {
         position: fixed;
         top: 0;
         left: 0;
-        height: 12vh;
+        height: 10vh;
         width: 100%;
         background-color: #0d0d0d;
         padding: 0 5%;
@@ -371,12 +439,13 @@ body {
 
     .hero-section{
         flex-direction: column;
+        margin-top: 10vh;
         gap: 20px;
     }
 
     .hero-img{
         width: 300px;
-        margin-top: 50px;
+        margin-top: 0px;
     }
 
     .hero-right-section{
@@ -481,10 +550,14 @@ body {
     }
     
     .project-img{
-        width: 30rem;
-        height: 30rem;
+        width: 100%;
+        height: auto;
         background-color: #1d1d1d;
         padding: 5rem 2.5rem;
+    }
+
+    .project-img > img{
+        object-fit: contain;
     }
 
     .project-card > h1{
@@ -496,9 +569,50 @@ body {
         font-size: 1.6rem;
         line-height: 1.6rem;
     }
+
+    .contact-section{
+        flex-direction: column;
+        justify-content: unset;
+        gap: 3rem;
+        padding: 5rem 2rem;
+    }
+    
+    .contact-section > .left{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .contact-section > .left > h1{
+        font-size: 2rem;
+        line-height: 3rem;
+        text-align: center;
+    }
+    
+    .contact-section > .left > p{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .contact-section > a{
+        font-size: 1.5rem;
+        padding: 1rem 3rem;
+    }
+
+    .footer{
+        padding: 0 4rem;
+    }
+
+    .footer-logo{
+        width: 10rem;
+    }
+    
+    .footer-icons{
+        display: flex;
+        gap: 3rem;
+    }
+    
+    .icon{
+        transform: scale(1.5);
+    }
 }
-
-
-
-
-
