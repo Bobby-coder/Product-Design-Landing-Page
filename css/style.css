@@ -599,6 +599,10 @@ body {
         padding: 1rem 3rem;
     }
 
+    .footer{
+        z-index: -5;
+    }
+
     .footer-logo{
         width: 10rem;
     }
