@@ -275,7 +275,7 @@ body {
 }
 
 .project-img{
-    width: 55rem;
+    width: 40rem;
     height: 40rem;
     background-color: #1d1d1d;
     padding: 5rem 2.5rem;
@@ -317,14 +317,13 @@ body {
 }
 
 .contact-section > .left > h1{
-    font-size: 5rem;
-    line-height: 6.5rem;
+    font-size: 3rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
 }
 
 .contact-section > .left > p{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     letter-spacing: 0.1rem;
 }
 
@@ -366,7 +365,7 @@ body {
     text-decoration: none;
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:900px){
 
     br{
         display: none;
